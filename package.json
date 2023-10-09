@@ -21,6 +21,7 @@
   },
   "type": "module",
   "dependencies": {
+    "date-fns": "^2.30.0",
     "lodash.bind": "^4.2.1",
     "lodash.bindkey": "^4.2.1",
     "lodash.inrange": "^3.3.6",
