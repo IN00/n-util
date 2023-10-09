@@ -1,4 +1,5 @@
 export * from './date/newDate.ts'
 export * from './date/newUTC.ts'
+export * from './date/isAfternoon.ts'
 export * from './date/isAfternoonNow.ts'
 export * from './NumberRange.ts'
