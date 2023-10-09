@@ -1,2 +1,2 @@
-export * from './date/newDate'
-export * from './date/newUTC'
+export * from './date/newDate.ts'
+export * from './date/newUTC.ts'
