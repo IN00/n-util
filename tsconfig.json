@@ -16,9 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vitest/globals"], // vitest の実行時には無くても問題ないが、VSCode が読み取ってくれないため
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "vitest.config.ts"],
   "exclude": ["node_modules", "prisma", "bin"],
-  "sourceMap": true
+  "sourceMap": true,
 }
