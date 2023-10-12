@@ -1,6 +1,12 @@
 {
 	"extends": "./tsconfig.json",
   "exclude": [
-    "test/**/*.ts"
-  ]
+    "test/**/*.ts",
+    "jest.config.ts",
+    "vitest.config.ts"
+  ],
+  "compilerOptions": {
+    "noEmit": false
+  },
+  "outDir": "dist"
 }
