@@ -11,6 +11,6 @@ export default defineConfig({
   plugins: [tsconfigPaths()],
   test: {
     include: ["test/**/*.?(c|m)[jt]s?(x)"],
-    globals: true,
+    globals: true, // describe 等を global に展開する
   }
 })
