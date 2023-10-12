@@ -1,4 +1,5 @@
-import { isAfternoonNow } from "../../src/index.ts"
+import { vi } from 'vitest'
+import { isAfternoonNow } from "@/index"
 
 describe('isAfternoonNow', () => {
   describe.each([
@@ -7,7 +8,7 @@ describe('isAfternoonNow', () => {
     ['2023-01-01T12:00:01', true]
   ])('', (time, result) => {
     it(`when it's now ${time}`, () => {
-      jest.useFakeTimers().setSystemTime(new Date(time))
+      vi.setSystemTime(new Date(time))
 
       expect(isAfternoonNow()).toEqual(result)
     })

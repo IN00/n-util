@@ -1,4 +1,4 @@
-import { NumberRange } from "../src/NumberRange.ts"
+import { NumberRange } from "@/NumberRange"
 import bindKey from "lodash.bindkey"
 
 describe('NumberRange', () => {
