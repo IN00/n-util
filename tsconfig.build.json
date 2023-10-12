@@ -1,12 +1,15 @@
 {
   "extends": "./tsconfig.json",
+  "include": ["src/**/*"],
   "exclude": [
+    "node_modules",
     "test/**/*.ts",
     "jest.config.ts",
     "vitest.config.ts"
   ],
   "compilerOptions": {
-    "noEmit": false
+    "noEmit": false,
+    "rootDir": ".", // コンパイルを開始する root ディレクトリを指定。include option はこのディレクトリを起点にコンパイルする
+    "outDir": "dist"
   },
-  "outDir": "dist"
 }
